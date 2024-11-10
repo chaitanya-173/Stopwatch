@@ -1,0 +1,1189 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    font-weight: 900;
+    color: white;
+}
+
+.box-stopwatch{
+    background-color: transparent;
+    width: 420px;
+    height: 90px;
+    position: relative;
+    left: 500px;
+    top: 200px;
+    display: flex;
+    z-index: 3;
+}
+
+/* 8 boxes */
+.box-mins-tens{
+    background-color: transparent;
+    width: 50px;
+    height: 90px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.box-mins-ones{
+    background-color: transparent;
+    width: 50px;
+    height: 90px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.box-dots-1{
+    background-color: transparent;
+    width: 25px;
+    height: 90px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.dots{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+}
+.box-secs-tens{
+    background-color: transparent;
+    width: 50px;
+    height: 90px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.box-secs-ones{
+    background-color: transparent;
+    width: 50px;
+    height: 90px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.box-dots-2{
+    background-color: transparent;
+    width: 25px;
+    height: 90px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.dot{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    bottom: 10px;
+}
+
+.box-milsecs-tens{
+    background-color: transparent;
+    width: 50px;
+    height: 90px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.box-milsecs-ones{
+    background-color: transparent;
+    width: 50px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 5 boxes */
+.mins-tens-1{
+    background-color: orangered;
+    width: 50px;
+    height: 10px;
+}
+
+.mins-tens-2{
+    background-color: transparent;
+    width: 50px;
+    height: 30px;
+    display: flex;
+}
+.mins-tens-3{
+    background-color: transparent;
+    width: 50px;
+    height: 10px;
+}
+.mins-tens-4{
+    background-color: transparent;
+    width: 50px;
+    height: 30px;
+    display: flex;
+}
+.mins-tens-5{
+    background-color: orangered;
+    width: 50px;
+    height: 10px;
+}
+
+.mins-ones-1{
+    background-color: orangered;
+    width: 50px;
+    height: 10px;
+}
+.mins-ones-2{
+    background-color: transparent;
+    width: 50px;
+    height: 30px;
+    display: flex;
+}
+.mins-ones-3{
+    background-color: transparent;
+    width: 50px;
+    height: 10px;
+}
+.mins-ones-4{
+    background-color: transparent;
+    width: 50px;
+    height: 30px;
+    display: flex;
+}
+.mins-ones-5{
+    background-color: orangered;
+    width: 50px;
+    height: 10px;
+}
+
+.secs-tens-1{
+    background-color: blue;
+    width: 50px;
+    height: 10px;
+}
+.secs-tens-2{
+    background-color: transparent;
+    width: 50px;
+    height: 30px;
+    display: flex;
+}
+.secs-tens-3{
+    background-color: transparent;
+    width: 50px;
+    height: 10px;
+}
+.secs-tens-4{
+    background-color: transparent;
+    width: 50px;
+    height: 30px;
+    display: flex;
+}
+.secs-tens-5{
+    background-color: blue;
+    width: 50px;
+    height: 10px;
+}
+
+.secs-ones-1{
+    background-color: blue;
+    width: 50px;
+    height: 10px;
+}
+.secs-ones-2{
+    background-color: transparent;
+    width: 50px;
+    height: 30px;
+    display: flex;
+}
+.secs-ones-3{
+    background-color: transparent;
+    width: 50px;
+    height: 10px;
+}
+.secs-ones-4{
+    background-color: transparent;
+    width: 50px;
+    height: 30px;
+    display: flex;
+}
+.secs-ones-5{
+    background-color: blue;
+    width: 50px;
+    height: 10px;
+}
+
+.milsecs-tens-1{
+    background-color: green;
+    width: 50px;
+    height: 10px;
+}
+.milsecs-tens-2{
+    background-color: transparent;
+    width: 50px;
+    height: 30px;
+    display: flex;
+}
+.milsecs-tens-3{
+    background-color: transparent;
+    width: 50px;
+    height: 10px;
+}
+.milsecs-tens-4{
+    background-color: transparent;
+    width: 50px;
+    height: 30px;
+    display: flex;
+}
+.milsecs-tens-5{
+    background-color: green;
+    width: 50px;
+    height: 10px;
+}
+
+.milsecs-ones-1{
+    background-color: green;
+    width: 50px;
+    height: 10px;
+}
+.milsecs-ones-2{
+    background-color: transparent;
+    width: 50px;
+    height: 30px;
+    display: flex;
+}
+.milsecs-ones-3{
+    background-color: transparent;
+    width: 50px;
+    height: 10px;
+}
+.milsecs-ones-4{
+    background-color: transparent;
+    width: 50px;
+    height: 30px;
+    display: flex;
+}
+.milsecs-ones-5{
+    background-color: green;
+    width: 50px;
+    height: 10px;
+}
+
+/* 3 boxes */
+.mins-tens-21{
+    background-color: orangered;
+    width: 10px;
+    height: 30px;
+}
+.mins-tens-22{
+    background-color:transparent;
+    width: 30px;
+    height: 30px;
+}
+.mins-tens-23{
+    background-color: orangered;
+    width: 10px;
+    height: 30px;
+}
+.mins-tens-41{
+    background-color: orangered;
+    width: 10px;
+    height: 30px;
+}
+.mins-tens-42{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+.mins-tens-43{
+    background-color: orangered;
+    width: 10px;
+    height: 30px;
+}
+
+.mins-ones-21{
+    background-color: orangered;
+    width: 10px;
+    height: 30px;
+}
+.mins-ones-22{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+.mins-ones-23{
+    background-color: orangered;
+    width: 10px;
+    height: 30px;
+}
+.mins-ones-41{
+    background-color: orangered;
+    width: 10px;
+    height: 30px;
+}
+.mins-ones-42{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+.mins-ones-43{
+    background-color: orangered;
+    width: 10px;
+    height: 30px;
+}
+
+.mins-tens-21{
+    background-color: orangered;
+    width: 10px;
+    height: 30px;
+}
+.mins-tens-22{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+.mins-tens-23{
+    background-color: orangered;
+    width: 10px;
+    height: 30px;
+}
+.mins-tens-41{
+    background-color: orangered;
+    width: 10px;
+    height: 30px;
+}
+.mins-tens-42{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+.mins-tens-43{
+    background-color: orangered;
+    width: 10px;
+    height: 30px;
+}
+
+.secs-tens-21{
+    background-color: blue;
+    width: 10px;
+    height: 30px;
+}
+.secs-tens-22{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+.secs-tens-23{
+    background-color: blue;
+    width: 10px;
+    height: 30px;
+}
+.secs-tens-41{
+    background-color: blue;
+    width: 10px;
+    height: 30px;
+}
+.secs-tens-42{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+.secs-tens-43{
+    background-color: blue;
+    width: 10px;
+    height: 30px;
+}
+
+.secs-ones-21{
+    background-color: blue;
+    width: 10px;
+    height: 30px;
+}
+.secs-ones-22{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+.secs-ones-23{
+    background-color: blue;
+    width: 10px;
+    height: 30px;
+}
+.secs-ones-41{
+    background-color: blue;
+    width: 10px;
+    height: 30px;
+}
+.secs-ones-42{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+.secs-ones-43{
+    background-color: blue;
+    width: 10px;
+    height: 30px;
+}
+
+.milsecs-tens-21{
+    background-color: green;
+    width: 10px;
+    height: 30px;
+}
+.milsecs-tens-22{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+.milsecs-tens-23{
+    background-color: green;
+    width: 10px;
+    height: 30px;
+}
+.milsecs-tens-41{
+    background-color: green;
+    width: 10px;
+    height: 30px;
+}
+.milsecs-tens-42{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+.milsecs-tens-43{
+    background-color: green;
+    width: 10px;
+    height: 30px;
+}
+
+.milsecs-ones-21{
+    background-color: green;
+    width: 10px;
+    height: 30px;
+}
+.milsecs-ones-22{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+.milsecs-ones-23{
+    background-color: green;
+    width: 10px;
+    height: 30px;
+}
+.milsecs-ones-41{
+    background-color: green;
+    width: 10px;
+    height: 30px;
+}
+.milsecs-ones-42{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+.milsecs-ones-43{
+    background-color: green;
+    width: 10px;
+    height: 30px;
+}
+
+/* animations */
+@keyframes bgChange-blue-top{
+    0%{background-color: blue;}
+    10%{background-color: transparent;}
+    20%{background-color: blue;}
+    30%{background-color: blue;}
+    40%{background-color: transparent;}
+    50%{background-color: blue;}
+    60%{background-color: blue;}
+    70%{background-color: blue;}
+    80%{background-color: blue;}
+    90%{background-color: blue;}
+    100%{background-color: blue;}
+}
+
+@keyframes bgChange-blue-bottom{
+    0%{background-color: blue;}
+    10%{background-color: transparent;}
+    20%{background-color: blue;}
+    30%{background-color: blue;}
+    40%{background-color: transparent;}
+    50%{background-color: blue;}
+    60%{background-color: blue;}
+    70%{background-color: transparent}
+    80%{background-color: blue;}
+    90%{background-color: blue;}
+    100%{background-color: blue;}
+}
+
+@keyframes bgChange-blue-middle{
+    0%{background-color: transparent;}
+    10%{background-color: transparent;}
+    20%{background-color: blue;}
+    30%{background-color: blue;}
+    40%{background-color: blue;}
+    50%{background-color: blue;}
+    60%{background-color: blue;}
+    70%{background-color: transparent}
+    80%{background-color: blue;}
+    90%{background-color: blue;}
+    100%{background-color: transparent;}
+}
+
+@keyframes bgChange-blue-top-left{
+    0%{background-color: blue;}
+    10%{background-color: transparent;}
+    20%{background-color: transparent;}
+    30%{background-color: transparent;}
+    40%{background-color: blue;}
+    50%{background-color: blue;}
+    60%{background-color: blue;}
+    70%{background-color: transparent}
+    80%{background-color: blue;}
+    90%{background-color: blue;}
+    100%{background-color: blue;}
+}
+
+@keyframes bgChange-blue-top-right{
+    0%{background-color: blue;}
+    10%{background-color: blue;}
+    20%{background-color: blue;}
+    30%{background-color: blue;}
+    40%{background-color: blue;}
+    50%{background-color: transparent;}
+    60%{background-color: transparent;}
+    70%{background-color: blue;}
+    80%{background-color: blue;}
+    90%{background-color: blue;}
+    100%{background-color: blue;}
+}
+
+@keyframes bgChange-blue-bottom-left{
+    0%{background-color: blue;}
+    10%{background-color: transparent;}
+    20%{background-color: blue;}
+    30%{background-color: transparent;}
+    40%{background-color: transparent;}
+    50%{background-color: transparent;}
+    60%{background-color: blue;}
+    70%{background-color: transparent;}
+    80%{background-color: blue;}
+    90%{background-color: transparent;}
+    100%{background-color: blue;}
+}
+
+@keyframes bgChange-blue-bottom-right{
+    0%{background-color: blue;}
+    10%{background-color: blue;}
+    20%{background-color: transparent;}
+    30%{background-color: blue;}
+    40%{background-color: blue;}
+    50%{background-color: blue;}
+    60%{background-color: blue;}
+    70%{background-color: blue;}
+    80%{background-color: blue;}
+    90%{background-color: blue;}
+    100%{background-color: blue;}
+}
+
+.secs-ones-1{
+    animation-name: bgChange-blue-top;
+    animation-duration: 10s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.secs-ones-5{
+    animation-name: bgChange-blue-bottom;
+    animation-duration: 10s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.secs-ones-3{
+    animation-name: bgChange-blue-middle;
+    animation-duration: 10s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.secs-ones-21{
+    animation-name: bgChange-blue-top-left;
+    animation-duration: 10s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.secs-ones-23{
+    animation-name: bgChange-blue-top-right;
+    animation-duration: 10s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.secs-ones-41{
+    animation-name: bgChange-blue-bottom-left;
+    animation-duration: 10s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.secs-ones-43{
+    animation-name: bgChange-blue-bottom-right;
+    animation-duration: 10s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes bgChange-blue-top-tens{
+    0%{background-color: blue;}
+    16.66%{background-color: transparent;}
+    33.33%{background-color: blue;}
+    50%{background-color: blue;}
+    66.66%{background-color: transparent;}
+    83.33%{background-color: blue;}
+    100%{background-color: blue;}
+}
+
+@keyframes bgChange-blue-bottom-tens{
+    0%{background-color: blue;}
+    16.66%{background-color: transparent;}
+    33.33%{background-color: blue;}
+    50%{background-color: blue;}
+    66.66%{background-color: transparent;}
+    83.33%{background-color: blue;}
+    100%{background-color: blue;}
+}
+
+@keyframes bgChange-blue-middle-tens{
+    0%{background-color: transparent;}
+    16.66%{background-color: transparent;}
+    33.33%{background-color: blue;}
+    50%{background-color: blue;}
+    66.66%{background-color: blue;}
+    83.33%{background-color: blue;}
+    100%{background-color: transparent;}
+}
+
+@keyframes bgChange-blue-top-left-tens{
+    0%{background-color: blue;}
+    16.66%{background-color: transparent;}
+    33.33%{background-color: transparent;}
+    50%{background-color: transparent;}
+    66.66%{background-color: blue;}
+    83.33%{background-color: blue;}
+    100%{background-color: blue;}
+}
+
+@keyframes bgChange-blue-top-right-tens{
+    0%{background-color: blue;}
+    16.66%{background-color: blue;}
+    33.33%{background-color: blue;}
+    50%{background-color: blue;}
+    66.66%{background-color: blue;}
+    83.33%{background-color: transparent;}
+    100%{background-color: blue;}
+}
+
+@keyframes bgChange-blue-bottom-left-tens{
+    0%{background-color: blue;}
+    16.66%{background-color: transparent;}
+    33.33%{background-color: blue;}
+    50%{background-color: transparent;}
+    66.66%{background-color: transparent;}
+    83.33%{background-color: transparent;}
+    100%{background-color: blue;}
+}
+
+@keyframes bgChange-blue-bottom-right-tens{
+    0%{background-color: blue;}
+    16.66%{background-color: blue;}
+    33.33%{background-color: transparent;}
+    50%{background-color: blue;}
+    66.66%{background-color: blue;}
+    83.33%{background-color: blue;}
+    100%{background-color: blue;}
+}
+
+.secs-tens-1{
+    animation-name: bgChange-blue-top-tens;
+    animation-duration: 60s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.secs-tens-5{
+    animation-name: bgChange-blue-bottom-tens;
+    animation-duration: 60s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.secs-tens-3{
+    animation-name: bgChange-blue-middle-tens;
+    animation-duration: 60s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.secs-tens-21{
+    animation-name: bgChange-blue-top-left-tens;
+    animation-duration: 60s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.secs-tens-23{
+    animation-name: bgChange-blue-top-right-tens;
+    animation-duration: 60s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.secs-tens-41{
+    animation-name: bgChange-blue-bottom-left-tens;
+    animation-duration: 60s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.secs-tens-43{
+    animation-name: bgChange-blue-bottom-right-tens;
+    animation-duration: 60s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes bgChange-green-top{
+    0%{background-color: green;}
+    10%{background-color: transparent;}
+    20%{background-color: green;}
+    30%{background-color: green;}
+    40%{background-color: transparent;}
+    50%{background-color: green;}
+    60%{background-color: green;}
+    70%{background-color: green;}
+    80%{background-color: green;}
+    90%{background-color: green;}
+    100%{background-color: green;}
+}
+
+@keyframes bgChange-green-bottom{
+    0%{background-color: green;}
+    10%{background-color: transparent;}
+    20%{background-color: green;}
+    30%{background-color: green;}
+    40%{background-color: transparent;}
+    50%{background-color: green;}
+    60%{background-color: green;}
+    70%{background-color: transparent}
+    80%{background-color: green;}
+    90%{background-color: green;}
+    100%{background-color: green;}
+}
+
+@keyframes bgChange-green-middle{
+    0%{background-color: transparent;}
+    10%{background-color: transparent;}
+    20%{background-color: green;}
+    30%{background-color: green;}
+    40%{background-color: green;}
+    50%{background-color: green;}
+    60%{background-color: green;}
+    70%{background-color: transparent}
+    80%{background-color: green;}
+    90%{background-color: green;}
+    100%{background-color: transparent;}
+}
+
+@keyframes bgChange-green-top-left{
+    0%{background-color: green;}
+    10%{background-color: transparent;}
+    20%{background-color: transparent;}
+    30%{background-color: transparent;}
+    40%{background-color: green;}
+    50%{background-color: green;}
+    60%{background-color: green;}
+    70%{background-color: transparent}
+    80%{background-color: green;}
+    90%{background-color: green;}
+    100%{background-color: green;}
+}
+
+@keyframes bgChange-green-top-right{
+    0%{background-color: green;}
+    10%{background-color: green;}
+    20%{background-color: green;}
+    30%{background-color: green;}
+    40%{background-color: green;}
+    50%{background-color: transparent;}
+    60%{background-color: transparent;}
+    70%{background-color: green;}
+    80%{background-color: green;}
+    90%{background-color: green;}
+    100%{background-color: green;}
+}
+
+@keyframes bgChange-green-bottom-left{
+    0%{background-color: green;}
+    10%{background-color: transparent;}
+    20%{background-color: green;}
+    30%{background-color: transparent;}
+    40%{background-color: transparent;}
+    50%{background-color: transparent;}
+    60%{background-color: green;}
+    70%{background-color: transparent;}
+    80%{background-color: green;}
+    90%{background-color: transparent;}
+    100%{background-color: green;}
+}
+
+@keyframes bgChange-green-bottom-right{
+    0%{background-color: green;}
+    10%{background-color: green;}
+    20%{background-color: transparent;}
+    30%{background-color: green;}
+    40%{background-color: green;}
+    50%{background-color: green;}
+    60%{background-color: green;}
+    70%{background-color: green;}
+    80%{background-color: green;}
+    90%{background-color: green;}
+    100%{background-color: green;}
+}
+
+.milsecs-ones-1{
+    animation-name: bgChange-green-top;
+    animation-duration: 0.1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.milsecs-ones-5{
+    animation-name: bgChange-green-bottom;
+    animation-duration: 0.1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.milsecs-ones-3{
+    animation-name: bgChange-green-middle;
+    animation-duration: 0.1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.milsecs-ones-21{
+    animation-name: bgChange-green-top-left;
+    animation-duration: 0.1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.milsecs-ones-23{
+    animation-name: bgChange-green-top-right;
+    animation-duration: 0.1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.milsecs-ones-41{
+    animation-name: bgChange-green-bottom-left;
+    animation-duration: 0.1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.milsecs-ones-43{
+    animation-name: bgChange-green-bottom-right;
+    animation-duration: 0.1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+.milsecs-tens-1{
+    animation-name: bgChange-green-top;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.milsecs-tens-5{
+    animation-name: bgChange-green-bottom;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.milsecs-tens-3{
+    animation-name: bgChange-green-middle;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.milsecs-tens-21{
+    animation-name: bgChange-green-top-left;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.milsecs-tens-23{
+    animation-name: bgChange-green-top-right;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.milsecs-tens-41{
+    animation-name: bgChange-green-bottom-left;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.milsecs-tens-43{
+    animation-name: bgChange-green-bottom-right;
+    animation-duration: 1s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes bgChange-orangered-top{
+    0%{background-color: orangered;}
+    10%{background-color: transparent;}
+    20%{background-color: orangered;}
+    30%{background-color: orangered;}
+    40%{background-color: transparent;}
+    50%{background-color: orangered;}
+    60%{background-color: orangered;}
+    70%{background-color: orangered;}
+    80%{background-color: orangered;}
+    90%{background-color: orangered;}
+    100%{background-color: orangered;}
+}
+
+@keyframes bgChange-orangered-bottom{
+    0%{background-color: orangered;}
+    10%{background-color: transparent;}
+    20%{background-color: orangered;}
+    30%{background-color: orangered;}
+    40%{background-color: transparent;}
+    50%{background-color: orangered;}
+    60%{background-color: orangered;}
+    70%{background-color: transparent}
+    80%{background-color: orangered;}
+    90%{background-color: orangered;}
+    100%{background-color: orangered;}
+}
+
+@keyframes bgChange-orangered-middle{
+    0%{background-color: transparent;}
+    10%{background-color: transparent;}
+    20%{background-color: orangered;}
+    30%{background-color: orangered;}
+    40%{background-color: orangered;}
+    50%{background-color: orangered;}
+    60%{background-color: orangered;}
+    70%{background-color: transparent}
+    80%{background-color: orangered;}
+    90%{background-color: orangered;}
+    100%{background-color: transparent;}
+}
+
+@keyframes bgChange-orangered-top-left{
+    0%{background-color: orangered;}
+    10%{background-color: transparent;}
+    20%{background-color: transparent;}
+    30%{background-color: transparent;}
+    40%{background-color: orangered;}
+    50%{background-color: orangered;}
+    60%{background-color: orangered;}
+    70%{background-color: transparent}
+    80%{background-color: orangered;}
+    90%{background-color: orangered;}
+    100%{background-color: orangered;}
+}
+
+@keyframes bgChange-orangered-top-right{
+    0%{background-color: orangered;}
+    10%{background-color: orangered;}
+    20%{background-color: orangered;}
+    30%{background-color: orangered;}
+    40%{background-color: orangered;}
+    50%{background-color: transparent;}
+    60%{background-color: transparent;}
+    70%{background-color: orangered;}
+    80%{background-color: orangered;}
+    90%{background-color: orangered;}
+    100%{background-color: orangered;}
+}
+
+@keyframes bgChange-orangered-bottom-left{
+    0%{background-color: orangered;}
+    10%{background-color: transparent;}
+    20%{background-color: orangered;}
+    30%{background-color: transparent;}
+    40%{background-color: transparent;}
+    50%{background-color: transparent;}
+    60%{background-color: orangered;}
+    70%{background-color: transparent;}
+    80%{background-color: orangered;}
+    90%{background-color: transparent;}
+    100%{background-color: orangered;}
+}
+
+@keyframes bgChange-orangered-bottom-right{
+    0%{background-color: orangered;}
+    10%{background-color: orangered;}
+    20%{background-color: transparent;}
+    30%{background-color: orangered;}
+    40%{background-color: orangered;}
+    50%{background-color: orangered;}
+    60%{background-color: orangered;}
+    70%{background-color: orangered;}
+    80%{background-color: orangered;}
+    90%{background-color: orangered;}
+    100%{background-color: orangered;}
+}
+
+.mins-ones-1{
+    animation-name: bgChange-orangered-top;
+    animation-duration: 600s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.mins-ones-5{
+    animation-name: bgChange-orangered-bottom;
+    animation-duration: 600s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.mins-ones-3{
+    animation-name: bgChange-orangered-middle;
+    animation-duration: 600s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.mins-ones-21{
+    animation-name: bgChange-orangered-top-left;
+    animation-duration: 600s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.mins-ones-23{
+    animation-name: bgChange-orangered-top-right;
+    animation-duration: 600s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.mins-ones-41{
+    animation-name: bgChange-orangered-bottom-left;
+    animation-duration: 600s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.mins-ones-43{
+    animation-name: bgChange-orangered-bottom-right;
+    animation-duration: 600s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes bgChange-orangered-top-tens{
+    0%{background-color: orangered;}
+    16.66%{background-color: transparent;}
+    33.33%{background-color: orangered;}
+    50%{background-color: orangered;}
+    66.66%{background-color: transparent;}
+    83.33%{background-color: orangered;}
+    100%{background-color: orangered;}
+}
+
+@keyframes bgChange-orangered-bottom-tens{
+    0%{background-color: orangered;}
+    16.66%{background-color: transparent;}
+    33.33%{background-color: orangered;}
+    50%{background-color: orangered;}
+    66.66%{background-color: transparent;}
+    83.33%{background-color: orangered;}
+    100%{background-color: orangered;}
+}
+
+@keyframes bgChange-orangered-middle-tens{
+    0%{background-color: transparent;}
+    16.66%{background-color: transparent;}
+    33.33%{background-color: orangered;}
+    50%{background-color: orangered;}
+    66.66%{background-color: orangered;}
+    83.33%{background-color: orangered;}
+    100%{background-color: transparent;}
+}
+
+@keyframes bgChange-orangered-top-left-tens{
+    0%{background-color: orangered;}
+    16.66%{background-color: transparent;}
+    33.33%{background-color: transparent;}
+    50%{background-color: transparent;}
+    66.66%{background-color: orangered;}
+    83.33%{background-color: orangered;}
+    100%{background-color: orangered;}
+}
+
+@keyframes bgChange-orangered-top-right-tens{
+    0%{background-color: orangered;}
+    16.66%{background-color: orangered;}
+    33.33%{background-color: orangered;}
+    50%{background-color: orangered;}
+    66.66%{background-color: orangered;}
+    83.33%{background-color: transparent;}
+    100%{background-color: orangered;}
+}
+
+@keyframes bgChange-orangered-bottom-left-tens{
+    0%{background-color: orangered;}
+    16.66%{background-color: transparent;}
+    33.33%{background-color: orangered;}
+    50%{background-color: transparent;}
+    66.66%{background-color: transparent;}
+    83.33%{background-color: transparent;}
+    100%{background-color: orangered;}
+}
+
+@keyframes bgChange-orangered-bottom-right-tens{
+    0%{background-color: orangered;}
+    16.66%{background-color: orangered;}
+    33.33%{background-color: transparent;}
+    50%{background-color: orangered;}
+    66.66%{background-color: orangered;}
+    83.33%{background-color: orangered;}
+    100%{background-color: orangered;}
+}
+
+.mins-tens-1{
+    animation-name: bgChange-orangered-top-tens;
+    animation-duration: 3600s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.mins-tens-5{
+    animation-name: bgChange-orangered-bottom-tens;
+    animation-duration: 3600s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.mins-tens-3{
+    animation-name: bgChange-orangered-middle-tens;
+    animation-duration: 3600s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.mins-tens-21{
+    animation-name: bgChange-orangered-top-left-tens;
+    animation-duration: 3600s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.mins-tens-23{
+    animation-name: bgChange-orangered-top-right-tens;
+    animation-duration: 3600s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.mins-tens-41{
+    animation-name: bgChange-orangered-bottom-left-tens;
+    animation-duration: 3600s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+.mins-tens-43{
+    animation-name: bgChange-orangered-bottom-right-tens;
+    animation-duration: 3600s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+}
+
+
